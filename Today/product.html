@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+</head>
+<style>
+
+form {
+    width: 38%;
+    height: auto;
+    padding: 7px ;
+    background-color: rgb(141, 140, 140);
+    margin: auto;
+    margin-top: 7rem;
+    border-radius: 9px;
+
+}
+form h1 {
+    text-align: center;
+}
+form input, 
+form h1{
+    width: 90%;
+    margin:2% 3.3% 2%;
+    font-size: 18px;
+    height: 2rem;
+}
+form button {
+    width: 38%;
+    margin-left: 5%;
+    height: 2rem;
+    background-color: green;
+    color:white;
+    border: 0;
+    border-radius: 5px;
+}
+
+
+</style>
+<body>
+<form action="">
+<h1 for="title">Calculate</h1>
+<input type="text" id="f" placeholder="First Number">
+<input type="text" id="s" placeholder="Second Number">
+<input type="text" id="t" placeholder="Third Number">
+<button type="submit" >Sum</button>
+<label for="output">Output:</label>
+<label id="output"></label>
+
+</form>
+<script>
+document.querySelector("button").onclick=my;
+function my()
+{
+var x=parseInt(document.getElementById("f").value);
+var y=parseInt(document.getElementById("s").value);
+var z=parseInt(document.getElementById("t").value);
+var sum=x+y+z;
+var comment=(sum>0)? "   Sum is positive":"   Sum is Negative";
+document.getElementById("output").innerText=sum;
+document.getElementById("output").innerText+=comment;
+
+return false;
+
+}
+
+
+
+</script>
+    
+</body>
+</html>

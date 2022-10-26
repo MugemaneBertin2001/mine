@@ -1,0 +1,99 @@
+body{
+    background-color: #fff;
+    margin: 0px;
+   
+}
+body #head{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    color: white;
+}
+body #head #profile{
+    width: 30%;
+    padding: 1.0rem 1.0rem 0.8rem;
+    
+}
+body #head #profile h1{
+    width: 100%;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
+body #head #profile label{
+ color: green;
+ margin: 0;
+ padding: 0;   
+}
+body #head #moto,
+body #head #search
+ {
+width: 30%;
+text-align: left;
+padding: 1em;
+}
+body #head #moto{
+color: green;
+}
+body #head #search form{
+margin: 15px;
+float: right;
+width: 100%;
+
+}
+body #head #search form input {
+    width: 70%;
+    height: 2rem;
+    border: 0;
+    border-radius: 8px;
+    font-size: large;
+}
+body #head #search form input[type=button]{
+    width: 25%;
+    background-color: green;
+}
+body #vertivalNavbar {
+width: 18%;
+background-color: rgb(3, 67, 3);
+padding-top: 0.2rem;
+display:inline-block;
+
+}
+body #vertivalNavbar ul li{
+    width: 100%;
+    margin-top: 8px;
+    list-style: none;
+    text-align: left;
+}
+body #vertivalNavbar ul span{
+    position: absolute;
+    margin-top:22% ;
+}
+
+body #content,
+body #vertivalNavbar {
+    height: 31.98rem; 
+    display:inline-block;
+    
+}
+body #vertivalNavbar ul li button{
+    color:white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 24px;
+    padding-top: 18px;
+    background-color:rgb(3, 67, 3);
+    border: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body #vertivalNavbar ul li :hover{
+    background-color: black;
+}
+body #content{
+height: 31.98rem; 
+width:70%;
+background-color: green;
+
+
+}
